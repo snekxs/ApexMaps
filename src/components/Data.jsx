@@ -19,7 +19,7 @@ export default function Data() {
       )
         .then((response) => response.json())
         .then((json) => setData(json));
-    }, 2500);
+    }, 3000);
   }, []);
 
   return data;

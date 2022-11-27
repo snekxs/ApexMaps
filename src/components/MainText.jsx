@@ -14,7 +14,19 @@ export default function MainText() {
       document.body.style.backgroundImage =
         "url('https://cdn1.dotesports.com/wp-content/uploads/2022/10/20144307/Apex-Legends-Broken-Moon-Powerizer-2048x1152.jpeg')";
       break;
-  }
+			case "Kings Canyon":
+			document.body.style.backgroundImage =
+				"url('https://wallpapercave.com/wp/wp4413079.jpg')";
+			break;
+			case "Olympus":
+			document.body.style.backgroundImage = 
+				"url('https://wallpapercave.com/wp/wp11307899.jpg')";
+			break;
+			case "Storm Point":
+			document.body.style.backgroundImage =
+				"url('https://wallpapercave.com/wp/wp11307877.jpg' )";
+			break;
+	}
 
   return <div>Current Map: {data ? data["current"]["map"] : "Loading..."}</div>;
 }

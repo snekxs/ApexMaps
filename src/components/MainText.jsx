@@ -3,7 +3,8 @@ import React from "react";
 
 export default function MainText() {
   const data = Data();
-  const map = data ? data["current"]["map"] : "Loading...";
+  const map = data ? data["battle_royale"]["current"]["map"] : "Loading...";
+
 
   switch (map) {
     case "World's Edge":
@@ -28,5 +29,5 @@ export default function MainText() {
 			break;
 	}
 
-  return <div>Current Map: {data ? data["current"]["map"] : "Loading..."}</div>;
+	return  <div id={"currentMap"}>Current Map: {data ? data["battle_royale"]["current"]["map"] : "Loading..."}</div>
 }
